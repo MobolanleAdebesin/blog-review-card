@@ -1,0 +1,53 @@
+:root {
+    --yellow: #f4d04e;
+    --gray-950: #111111; 
+    --gray-500: #6b6b6b;
+    --white: #ffffff;
+  }
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Figtree-Medium";
+    src:
+      local("Figtree-Medium"),
+      url('./assets/fonts/static/Figtree-Medium.ttf')  format('truetype');  
+  }
+  
+@font-face{
+    font-family: "Figtree-ExtraBold"; 
+    src: 
+    local("Figtree-ExtraBold"),
+    url('./assets/fonts/static/Figtree-ExtraBold.ttf') format('truetype');
+}
+@font-face{
+    font-family: "Figtree-Italic-VariableFont"; 
+    src: 
+    local("Figtree-Italic-VariableFont")  ,
+    url('./assets/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
+}
+@font-face{
+    font-family: "Figtree-VariableFont_wght";
+    src:
+    local("Figtree-VariableFont_wght"),
+    url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+}
+
+
+
+
+h1{
+color: var(--gray-950); 
+font-family: Figtree-Medium; 
+}
+
+h1:hover{
+    color: var(--yellow);
+}
+
+
+
+
+
+
