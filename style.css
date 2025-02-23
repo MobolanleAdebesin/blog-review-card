@@ -34,16 +34,107 @@
     url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
 }
 
-
-
+body{
+    background-color: var(--yellow);
+    padding: 9.75rem 1.5rem; 
+    margin: 0;
+}
 
 h1{
-color: var(--gray-950); 
-font-family: Figtree-Medium; 
+    color: var(--gray-950); 
+    font-family: Figtree-ExtraBold; 
+    margin: 0;
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    line-height: 150%; 
+    letter-spacing: 0;
+}
+p{
+    margin: 0;
 }
 
 h1:hover{
     color: var(--yellow);
+}
+
+.card{
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0.6rem 0.6rem var(--gray-950); 
+    display: flex; 
+    flex-direction: column; 
+    gap: 1.5rem;
+    max-width: 24rem;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.card-container{
+    border-radius: 1rem;
+}
+
+.card-body{
+    display: flex; 
+    flex-direction: column; 
+    gap: 0.75rem;
+}
+.card-container.img{
+    height: 200px;
+}
+
+.card-img.header{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.card-tag{
+    background-color: var(--yellow); 
+    font-family: Figtree-ExtraBold; 
+    color: var(--gray-950); 
+    line-height: 150%; 
+    letter-spacing: 0; 
+    padding: 0.25rem 0.75rem;
+    font-size: clamp(.75rem, 3vw, 0.875rem);
+    border-radius: 0.25rem;
+    width: fit-content;
+}
+.card-publication-data{
+    font-family: Figtree-Medium; 
+    font-size: clamp(0.75rem, 3vw, 0.875rem); 
+    line-height: 150%; 
+    letter-spacing: 0; 
+}
+
+.card-description{
+    font-family: Figtree-Medium; 
+    font-size: clamp(0.875rem, 3vw, 1rem);
+    line-height: 150%; 
+    letter-spacing: 0; 
+    color: var(--gray-500);
+}
+
+.card-footer{
+    display: flex;
+    align-items:center;
+    gap:0.75rem;
+}
+
+.card-img.avatar{
+   width:2rem;
+}
+.card-author{
+    font-family: Figtree-ExtraBold;
+    font-size: 0.875rem;
+    
+}
+
+.attribution{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
 }
 
 
