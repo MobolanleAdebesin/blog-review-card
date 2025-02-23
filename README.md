@@ -14,9 +14,6 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -28,82 +25,75 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Desktop View]('./assets/images/Desktop View Frontend Mentor Blog preview card.png')
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Mobile View]('./assets/images/Mobile View Frontend Mentor Blog preview card.png')
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://blog-review-card-three.vercel.app/](https://blog-review-card-three.vercel.app/)
 
 ## My process
+
+I started by mapping out each section of the component:
+
+- card
+- Category Tag
+- Blog Illustration
+- Card Title
+- Card Description
+- author's photo
+- author's name
+
+I added these elements to the page using a series of divs, an h1 tag, a p tag, img tags, etc.
+I added a class to each element
+I styled the component from top to bottom using the Figma design files for reference
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+- I learned that I can use `object-fit` css property in order to adjust the dimensions of the blog preview image
 
-To see how you can add code snippets, see below:
+```
+.card-img.header{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
 
-```html
-<h1>Some HTML code I'm proud of</h1>
 ```
 
-```css
-.proud-of-this-css {
-  color: papayawhip;
+- I learned about how to resize font-sizes for different screens without using media queries. Instead, I used the `clamp` css function:
+
+```
+.card-description{
+    font-family: Figtree-Medium;
+    font-size: clamp(0.875rem, 3vw, 1rem);
+    line-height: 150%;
+    letter-spacing: 0;
+    color: var(--gray-500);
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I enjoyed exploring the Figma Designs for this project and I would like to improve my "Figma Literacy". Having a design system was helpful but some aspects, like how to apply the spacing, were confusing for me.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Resource 1](https://css-tricks.com/almanac/properties/o/object-fit/) - This resource was helpful for learning more about the object-fit property
+- [Resource 2](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit) - MDN is another resource I used for learning about the object-fit property
+- [Resource 3](https://blog.dai.codes/responsive-css-without-media-queries/) - This article explained how to modify font-sizes without media queries
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - [Bola Adebesin](https://www.badebesin.com/)
+- Frontend Mentor - [@MobolanleAdebesin](https://www.frontendmentor.io/profile/MobolanleAdebesin)
