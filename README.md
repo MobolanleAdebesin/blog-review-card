@@ -25,9 +25,9 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop View]('./assets/images/Desktop View Frontend Mentor Blog preview card.png')
+![Desktop View](./assets/images/Desktop%20View%20Frontend%20Mentor%20Blog%20preview%20card.png)
 
-![Mobile View]('./assets/images/Mobile View Frontend Mentor Blog preview card.png')
+![Mobile View](./assets/images/Mobile%20View%20Frontend%20Mentor%20Blog%20preview%20card.png)
 
 ### Links
 
